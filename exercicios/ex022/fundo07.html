@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Astronauta no Espaço</title>
+    <title>Alinhamento Vertical</title>
     <style>
         *{
             margin: 0px;
             padding: 0px;
         }
 
-        body{
-            height: 100vh;
-            background-image: url('imagens/espaco.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
+        #container{
+            background: blue url('imagens/target001.png');
+            background-size: 100% 100%;
+            height: 96vh;
+            padding: 10px;
             position: relative;
         }
-
-        picture img{
-            width: 200px;
+        
+        #conteudo{
+            background: orangered url('imagens/target001.png');
+            background-size: 100% 100%;
             height: 200px;
+            width: 400px;
             position: absolute;
             left: 50%;
             top: 50%;
@@ -32,8 +32,8 @@
     </style>
 </head>
 <body>
-    <picture>
-        <img src="imagens/astronauta.png" alt="imagem astronauta">
-    </picture>
+    <section id="container">
+        <article id="conteudo"></article>
+    </section>
 </body>
 </html>
