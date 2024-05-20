@@ -10,24 +10,45 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h1{
+            text-align: center;
+        }
+
         table{
             width: 500px;
             border-collapse: collapse;
+            margin: auto;
+            position: relative;
         }
-
+        
         td, tr, th{
             border: 0.5px solid black;
             padding: 8px;
         }
 
-        thead{
-            background-color: gray;
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: rgb(56, 56, 56);
             color: white;
         }
 
-        tfoot{
-            background-color: gray;
-            color: white;
+        thead tr th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(56, 56, 56);
+        }
+
+        tbody tr:nth-child(odd){ /* 2n-1 */
+            background-color: white;
+        }
+        tbody tr:nth-child(even){ /* 2n */
+            background-color: lightgray;
         }
 
         .num{
@@ -40,6 +61,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -48,10 +70,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -166,10 +189,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ad sapiente dolorum doloribus est minus distinctio ratione. Accusamus, nemo. At molestias quidem aliquid quasi ea odio mollitia! Reiciendis, debitis placeat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus commodi iure amet perferendis distinctio rerum! Eveniet aperiam eius inventore cupiditate molestias, veritatis assumenda velit repellendus error, laborum sunt tempora modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, soluta, alias enim nisi repellat, suscipit fuga voluptatem dolor nobis quaerat ea maxime optio esse qui velit perferendis distinctio vero quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe qui iste temporibus cupiditate labore, accusamus, voluptas laborum porro dolores quis at ea? Repudiandae tenetur itaque error, alias unde temporibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ad sapiente dolorum doloribus est minus distinctio ratione. Accusamus, nemo. At molestias quidem aliquid quasi ea odio mollitia! Reiciendis, debitis placeat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus commodi iure amet perferendis distinctio rerum! Eveniet aperiam eius inventore cupiditate molestias, veritatis assumenda velit repellendus error, laborum sunt tempora modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, soluta, alias enim nisi repellat, suscipit fuga voluptatem dolor nobis quaerat ea maxime optio esse qui velit perferendis distinctio vero quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe qui iste temporibus cupiditate labore, accusamus, voluptas laborum porro dolores quis at ea? Repudiandae tenetur itaque error, alias unde temporibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ad sapiente dolorum doloribus est minus distinctio ratione. Accusamus, nemo. At molestias quidem aliquid quasi ea odio mollitia! Reiciendis, debitis placeat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus commodi iure amet perferendis distinctio rerum! Eveniet aperiam eius inventore cupiditate molestias, veritatis assumenda velit repellendus error, laborum sunt tempora modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, soluta, alias enim nisi repellat, suscipit fuga voluptatem dolor nobis quaerat ea maxime optio esse qui velit perferendis distinctio vero quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe qui iste temporibus cupiditate labore, accusamus, voluptas laborum porro dolores quis at ea? Repudiandae tenetur itaque error, alias unde temporibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ad sapiente dolorum doloribus est minus distinctio ratione. Accusamus, nemo. At molestias quidem aliquid quasi ea odio mollitia! Reiciendis, debitis placeat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus commodi iure amet perferendis distinctio rerum! Eveniet aperiam eius inventore cupiditate molestias, veritatis assumenda velit repellendus error, laborum sunt tempora modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, soluta, alias enim nisi repellat, suscipit fuga voluptatem dolor nobis quaerat ea maxime optio esse qui velit perferendis distinctio vero quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe qui iste temporibus cupiditate labore, accusamus, voluptas laborum porro dolores quis at ea? Repudiandae tenetur itaque error, alias unde temporibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ad sapiente dolorum doloribus est minus distinctio ratione. Accusamus, nemo. At molestias quidem aliquid quasi ea odio mollitia! Reiciendis, debitis placeat! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus commodi iure amet perferendis distinctio rerum! Eveniet aperiam eius inventore cupiditate molestias, veritatis assumenda velit repellendus error, laborum sunt tempora modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, soluta, alias enim nisi repellat, suscipit fuga voluptatem dolor nobis quaerat ea maxime optio esse qui velit perferendis distinctio vero quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe qui iste temporibus cupiditate labore, accusamus, voluptas laborum porro dolores quis at ea? Repudiandae tenetur itaque error, alias unde temporibus.</p>
 </body>
 </html>
