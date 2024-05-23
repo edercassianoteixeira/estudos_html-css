@@ -12,11 +12,47 @@ html, body{
     background-color: black;
 }
 
-body{
+main{
+    position: relative;
+    height: 100vh;
     background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
-main{
-    height: 100vh;
+section#celular{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 540px;
+    width: 250px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela{
+    position: relative;
+    top: 65px;
+    left: 19px;
+    width: 213px;
+    height: 378px;
+}
+
+section#menu{
+    text-align: right;
+}
+
+section#menu img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.600);
+    box-sizing: border-box;
+}
+
+section#menu img:hover{
+    border: 2px solid rgba(59, 17, 0, 0.600);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.600);
+    transition: transform .3s;
 }
